@@ -211,7 +211,7 @@ elif page == "Job Risk Prediction":
         prediction = model.predict(input_data)
         prob = prediction[0]
 
-        if prob < 0.3:
+        if prob < 0.3: #AI_Impact_on_Jobs
             risk = "Low Risk"
             color = "green"
         elif prob < 0.7:
